@@ -10,27 +10,29 @@
 </head>
 <body>
 	<main>
+	<!-- First Section. Header -->
 		<section class="section-1">
 			<div class="row">
-				<div class="logo col-2">take</div>
+				<div class="logo col-5">take</div>
 			</div>
-			<header class="row">
+			<aside class="row">
 				<h5><span>Perfect</span>&ensp; <a href="#">takepapp.com</a></h5>
-				<h1 class="col-5">Picture perfect</h1>
-			</header>
+				<h1 class="col-12">Picture perfect</h1>
+			</aside>
 			<article class="row">
 				<div class="col-5">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					</p>
 				</div>
-				<div class="col-7">
+				<div class="col-7 phone-img">
 					<img src="image/iPhone-img-crop.png">
 				</div>
 			</article>
 		</section>
+	<!-- Second Section. Idea -->
 		<section class="section-2">
 			<header class="row">
-				<h2 class="col-4">Start something new</h2>
+				<h2 class="col-12">Start something new</h2>
 			</header>
 			<article class="row">
 				<div class="col-6">
@@ -59,6 +61,7 @@
 				</div>
 			</article>
 		</section>
+	<!-- Third Section. Gallery -->
 		<section class="section-3">
 			<div class="wrapper">
 				<article id="gallery">
@@ -129,11 +132,12 @@
 				</article>
 			</div>
 		</section>
+	<!-- Fourth Section. Description -->
 		<section class="section-4">
-			<header class="row">
+			<aside class="row">
 				<h5><a href="#">takepapp.com</a></h5>
-				<h2 class="col-4">A look at the details</h2>
-			</header>
+				<h2 class="col-12">A look at the details</h2>
+			</aside>
 			<article class="row">
 				<div class="col-3">
 					<h4>Web based</h4>
@@ -169,9 +173,10 @@
 				</div>
 			</article>
 		</section>
+	<!-- Fifth Section. Options Link -->
 		<section class="section-5">
 			<header class="row">
-				<h2 class="col-6">More power<br>behind every pixel</h2>
+				<h2 class="col-12">More power<br>behind every pixel</h2>
 			</header>
 			<article class="row">
 				<div class="col-5">
@@ -188,11 +193,12 @@
 				</a>
 			</div>
 		</section>
+	<!-- Sixth Section. Reasons -->
 		<section class="section-6">
-			<header class="row">
+			<aside class="row">
 				<h5><a href="#">takepapp.com</a></h5>
-				<h2 class="col-5">Reasons to get onboard</h2>
-			</header>
+				<h2 class="col-12">Reasons to get onboard</h2>
+			</aside>
 			<article class="row">
 				<div class="col-4">
 					<h4>Web based</h4>
@@ -220,6 +226,7 @@
 				</div>
 			</article> 
 		</section>
+	<!-- Seventh Section. Plans -->
 		<section class="section-7">
 			<div class="row">
 				<h5><a href="#">takepapp.com</a></h5>
@@ -229,7 +236,7 @@
 						<h3>Go it Solo</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud
+						quis nostrud exercitation
 						</p>
 					</div>
 					<button class="buy-now">Buy Now $9</button>
@@ -256,6 +263,7 @@
 			</div>
 		</section>
 	</main>
+	<!-- Last Section. Footer -->
 	<footer>
 		<div class="row">
 			<div class="col-6">
@@ -271,7 +279,7 @@
 				<form>
 					<input type="email" required>
 					<input type="submit" value=" ">
-					<span><div></div></span>
+					<span class="tick"><div></div></span>
 					<!-- Submit Button Style with Unicode -->
 					<!-- <span>&not;</span> -->
 				</form>
@@ -313,14 +321,17 @@
 			</div>
 		</div>
 	</footer>
+	<!-- Gallery Script for window width > 1224px -->
 	<script type="text/javascript">
-		window.onscroll = function() {gallerySliding()};
+		if (window.innerWidth > 1224 && window.innerWidth < 2400) {
+			window.onscroll = function() {gallerySliding()};
+		}
 		function gallerySliding() {
-	    if (document.body.scrollTop > 1390) {
-	      document.getElementById("gallery").className = "gallery-translate";
-	    } else if (document.body.scrollTop < 1385) {
-	      document.getElementById("gallery").className = "";
-	    }
+		    if (document.body.scrollTop > 1390) {
+		      document.getElementById("gallery").className = "gallery-translate";
+		    } else if (document.body.scrollTop < 1385) {
+		      document.getElementById("gallery").className = "";
+		    }
 		}
 	</script>
 </body>
