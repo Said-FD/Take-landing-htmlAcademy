@@ -7,8 +7,6 @@
 
 /* General Styles */
 body {
-	max-width: 1800px;
-	min-width: 1200px;
 	margin: 0 auto;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
@@ -23,17 +21,14 @@ h2 {
 	line-height: 125%;
 	font-weight: 300;
 	font-size: 2.1875em;
-	// color: #222626;
 }
 h3 {
 	font-weight: 300;
 	font-size: 1.875em;
-	// color: #2e3b4e;
 }
 h4 {
 	font-weight: 600;
 	font-size: 0.8125em;
-	// color: #67676d;
 }
 h5 {
 	font-weight: 600;
@@ -42,7 +37,6 @@ h5 {
 p {
 	font-weight: 400;
 	font-size: 0.8125em;
-	// color: #959595;
 }
 a {text-decoration: none;}
 li {list-style: none;}
@@ -80,7 +74,6 @@ section, footer {
 
 /* Section-1 Styles */
 .section-1 {
-	// height: 950px;
 	padding: 4% 0 21.6em 0;
 	background: #f5989d url('../image/top-bg.png') no-repeat center center;
 	background-size: cover;
@@ -116,7 +109,7 @@ section, footer {
 			border-radius: 50%;
 		}
 	}
-	header {
+	aside {
 		position: relative;
 		padding: 14.5em 0 1.5em 0;
 		h5 {
@@ -134,7 +127,6 @@ section, footer {
 	}
 	article {
 		position: relative;
-		padding-bottom: ;
 		img {
 			position: absolute;
 			top: -17em;
@@ -148,7 +140,6 @@ section, footer {
 
 /* Section-2 Styles */
 .section-2 {
-	// height: 540px;
 	padding: 5% 0 3.5% 0;
 	h2 {
 		padding-bottom: 0;
@@ -165,7 +156,7 @@ section, footer {
 
 /* Section-3 Styles */
 .section-3 {
-	max-width: 1800px;
+	max-width: 2400px;
 	height: 556px;
 	overflow-x: hidden;
 	.wrapper {
@@ -228,9 +219,8 @@ section, footer {
 
 /* Section-4 Styles */
 .section-4 {
-	// height: 525px;
 	padding: 5% 0 7.7% 0;
-	header {position: relative;
+	aside {position: relative;
 		h5 {
 			position: absolute;
 			bottom: -0.5em;
@@ -250,7 +240,6 @@ section, footer {
 
 /* Section-5 Styles */
 .section-5 {
-	// height: 873px;
 	padding: 23.5% 0 6.1% 0;
 	background: #bd8cbf url('../image/middle-bg.png') no-repeat center center;
 	background-size: cover;
@@ -265,11 +254,10 @@ section, footer {
 
 /* Section-6 Styles */
 .section-6 {
-	// height: 535px;
 	padding: 5% 0 8.95% 0;
 	color: #fff;
 	background: #82ca9c;
-	header {position: relative;
+	aside {position: relative;
 		h5 {
 			position: absolute;
 			bottom: -0.5em;
@@ -286,7 +274,6 @@ section, footer {
 
 /* Section-7 Styles */
 .section-7 {
-	// height: 530px;
 	padding: 4.5% 0 6.75% 0;
 	background: #f6f7fa;
 	.row {position: relative;
@@ -352,9 +339,8 @@ section, footer {
 	.col-6:hover h3 {font-weight: 400;}
 }
 
-/* Main Footer */
+/* Footer */
 footer {
-	// height: 610px;
 	padding: 6.35% 0 7.3% 0;
 	color: #fff;
 	background: #192431;
@@ -412,7 +398,7 @@ footer {
 				}
 			}
 			/* Submit Button Style with Unicode */
-			/*span {
+			/*.tick {
 				position: absolute;
 				top: -0.88em;
 				left: 5.45em;
@@ -439,4 +425,74 @@ footer {
 			color: #fff;
 		}
 	}
+}
+
+/* Media Queries */
+@media only screen and (min-width: 1800px) {
+	body {font-size: 18px;}
+	.row {width: 1600px;}
+	.section-3 .wrapper {width: 1570px;}
+	.section-3 .wrapper .gallery-translate {margin-left: -420px;}
+	footer .col-6:last-child .tick {bottom: -2.5em; right: -3em;}
+}
+
+@media only screen and (max-width: 1224px) {
+	.col-3 {width: 50%;}
+	.row {width: 980px;}
+	.section-1 {padding: 4% 0 5em 0;}
+	.section-1 aside {padding: 4em 0 1em 0;}
+	.section-1 .logo {padding-left: 8.5%;}
+	.section-1 img {display: none;}
+	.section-2 .col-6:last-child {padding-top: 0;}
+	.section-3 {height: 1112px;}
+	.section-3 .wrapper {width: 950px;}
+	.section-3 .wrapper #gallery {width: 800px; margin: 0 auto;}
+	.second-img, .sixth-img {display: none;}
+	footer .col-6:last-child {padding-left: 0.5%;}
+
+}
+
+@media only screen and (max-width: 1024px) {
+	.col-6 {width: 100%;}
+	.row {width: 700px;}
+	.section-1 .logo {padding-left: 11%;}
+	.section-3 {height: 834px;}
+	.section-3 .wrapper {width: 760px;}
+	.section-3 .wrapper #gallery {width: 760px;}
+	.section-3 .wrapper #gallery .first-img, .section-3 .wrapper #gallery .third-img {width: 380px;}
+	.section-3 .wrapper #gallery .fifth-img, .section-3 .wrapper #gallery .seventh-img {width: 760px;}
+	.fourth-img {display: none;}
+	footer {text-align: center;}
+	footer .col-6:first-child {padding: 0 10%;}
+	footer .col-6:last-child {padding-left: 1.5%;}
+	footer .col-6:last-child form {margin: 0 auto;}
+	footer .col-2 {width: 33.33%;}
+	footer .col-2 h4, footer .col-2 ul li {padding-left: 33.33%; text-align: left;}
+}
+
+@media only screen and (max-width: 768px) {
+	[class*="col-"] {width: 100%;}
+	.row {width: 460px;}
+	.section-1 {padding: 4% 0 3em 0;}
+	.section-1 .logo {padding-left: 20%;}
+	.section-3 {display: none;}
+	.section-4 h4, .section-6 .col-4 h4 {padding: 0 0 3% 0;}
+	.section-5 {padding: 5% 0;}
+	.section-7 .col-6 {padding: 2em;}
+	footer .col-6:last-child {padding: 0;}
+	footer .col-6:last-child h4 {padding-top: 3%;}
+	footer .col-2 h4, footer .col-2 ul li {padding-left: 15%;}
+}
+
+@media only screen and (max-width: 480px) {
+	.row {width: 320px;}
+	.section-1 {padding: 4% 0 1em 0;}
+	.section-1 aside {padding: 0;}
+	.section-1 aside h1 {line-height: 110%;}
+	.section-1 .logo {padding-left: 30%;}
+	.section-3 {display: none;}
+	.section-5 {display: none;}
+	.section-7 .col-6 {padding: 2em;}
+	footer .col-6:last-child form {width: 20em;}
+	footer .col-6:last-child form input[type=email] {width: 12em;}
 }

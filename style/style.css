@@ -6,8 +6,6 @@
 }
 /* General Styles */
 body {
-  max-width: 1800px;
-  min-width: 1200px;
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -138,27 +136,26 @@ footer {
   border: 4px solid #fff;
   border-radius: 50%;
 }
-.section-1 header {
+.section-1 aside {
   position: relative;
   padding: 14.5em 0 1.5em 0;
 }
-.section-1 header h5 {
+.section-1 aside h5 {
   position: absolute;
   bottom: -1.5em;
   left: -27em;
   transform: rotate(270deg);
   text-transform: uppercase;
 }
-.section-1 header h5 span {
+.section-1 aside h5 span {
   font-weight: 300;
   letter-spacing: 0.1em;
 }
-.section-1 header h5 a {
+.section-1 aside h5 a {
   color: #fff;
 }
 .section-1 article {
   position: relative;
-  padding-bottom: ;
 }
 .section-1 article img {
   position: absolute;
@@ -188,7 +185,7 @@ footer {
 }
 /* Section-3 Styles */
 .section-3 {
-  max-width: 1800px;
+  max-width: 2400px;
   height: 556px;
   overflow-x: hidden;
 }
@@ -275,20 +272,20 @@ footer {
 .section-4 {
   padding: 5% 0 7.7% 0;
 }
-.section-4 header {
+.section-4 aside {
   position: relative;
 }
-.section-4 header h5 {
+.section-4 aside h5 {
   position: absolute;
   bottom: -0.5em;
   left: -24em;
   transform: rotate(270deg);
   text-transform: uppercase;
 }
-.section-4 header h5 a {
+.section-4 aside h5 a {
   color: #959595;
 }
-.section-4 header h2 {
+.section-4 aside h2 {
   color: #222626;
 }
 .section-4 h4 {
@@ -319,17 +316,17 @@ footer {
   color: #fff;
   background: #82ca9c;
 }
-.section-6 header {
+.section-6 aside {
   position: relative;
 }
-.section-6 header h5 {
+.section-6 aside h5 {
   position: absolute;
   bottom: -0.5em;
   left: -24em;
   transform: rotate(270deg);
   text-transform: uppercase;
 }
-.section-6 header h5 a {
+.section-6 aside h5 a {
   color: #fff;
 }
 .section-6 .col-4 {
@@ -417,7 +414,7 @@ footer {
 .section-7 .col-6:hover h3 {
   font-weight: 400;
 }
-/* Main Footer */
+/* Footer */
 footer {
   padding: 6.35% 0 7.3% 0;
   color: #fff;
@@ -438,7 +435,7 @@ footer .col-6:last-child form {
   overflow: hidden;
   border-radius: 3px;
   /* Submit Button Style with Unicode */
-  /*span {
+  /*.tick {
 				position: absolute;
 				top: -0.88em;
 				left: 5.45em;
@@ -504,4 +501,183 @@ footer .col-2 a {
   font-weight: 400;
   font-size: 0.8125em;
   color: #fff;
+}
+/* Media Queries */
+@media only screen and (min-width: 1800px) {
+  body {
+    font-size: 18px;
+  }
+  .row {
+    width: 1600px;
+  }
+  .section-3 .wrapper {
+    width: 1570px;
+  }
+  .section-3 .wrapper .gallery-translate {
+    margin-left: -420px;
+  }
+  footer .col-6:last-child .tick {
+    bottom: -2.5em;
+    right: -3em;
+  }
+}
+@media only screen and (max-width: 1224px) {
+  .col-3 {
+    width: 50%;
+  }
+  .row {
+    width: 980px;
+  }
+  .section-1 {
+    padding: 4% 0 5em 0;
+  }
+  .section-1 aside {
+    padding: 4em 0 1em 0;
+  }
+  .section-1 .logo {
+    padding-left: 8.5%;
+  }
+  .section-1 img {
+    display: none;
+  }
+  .section-2 .col-6:last-child {
+    padding-top: 0;
+  }
+  .section-3 {
+    height: 1112px;
+  }
+  .section-3 .wrapper {
+    width: 950px;
+  }
+  .section-3 .wrapper #gallery {
+    width: 800px;
+    margin: 0 auto;
+  }
+  .second-img,
+  .sixth-img {
+    display: none;
+  }
+  footer .col-6:last-child {
+    padding-left: 0.5%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .col-6 {
+    width: 100%;
+  }
+  .row {
+    width: 700px;
+  }
+  .section-1 .logo {
+    padding-left: 11%;
+  }
+  .section-3 {
+    height: 834px;
+  }
+  .section-3 .wrapper {
+    width: 760px;
+  }
+  .section-3 .wrapper #gallery {
+    width: 760px;
+  }
+  .section-3 .wrapper #gallery .first-img,
+  .section-3 .wrapper #gallery .third-img {
+    width: 380px;
+  }
+  .section-3 .wrapper #gallery .fifth-img,
+  .section-3 .wrapper #gallery .seventh-img {
+    width: 760px;
+  }
+  .fourth-img {
+    display: none;
+  }
+  footer {
+    text-align: center;
+  }
+  footer .col-6:first-child {
+    padding: 0 10%;
+  }
+  footer .col-6:last-child {
+    padding-left: 1.5%;
+  }
+  footer .col-6:last-child form {
+    margin: 0 auto;
+  }
+  footer .col-2 {
+    width: 33.33%;
+  }
+  footer .col-2 h4,
+  footer .col-2 ul li {
+    padding-left: 33.33%;
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+  .row {
+    width: 460px;
+  }
+  .section-1 {
+    padding: 4% 0 3em 0;
+  }
+  .section-1 .logo {
+    padding-left: 20%;
+  }
+  .section-3 {
+    display: none;
+  }
+  .section-4 h4,
+  .section-6 .col-4 h4 {
+    padding: 0 0 3% 0;
+  }
+  .section-5 {
+    padding: 5% 0;
+  }
+  .section-7 .col-6 {
+    padding: 2em;
+  }
+  footer .col-6:last-child {
+    padding: 0;
+  }
+  footer .col-6:last-child h4 {
+    padding-top: 3%;
+  }
+  footer .col-2 h4,
+  footer .col-2 ul li {
+    padding-left: 15%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .row {
+    width: 320px;
+  }
+  .section-1 {
+    padding: 4% 0 1em 0;
+  }
+  .section-1 aside {
+    padding: 0;
+  }
+  .section-1 aside h1 {
+    line-height: 110%;
+  }
+  .section-1 .logo {
+    padding-left: 30%;
+  }
+  .section-3 {
+    display: none;
+  }
+  .section-5 {
+    display: none;
+  }
+  .section-7 .col-6 {
+    padding: 2em;
+  }
+  footer .col-6:last-child form {
+    width: 20em;
+  }
+  footer .col-6:last-child form input[type=email] {
+    width: 12em;
+  }
 }
