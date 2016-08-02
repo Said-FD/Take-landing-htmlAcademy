@@ -48,6 +48,9 @@ footer {
   display: block;
   width: 100%;
 }
+label {
+  display: none;
+}
 /* 12 Column Grid Layout */
 .col-1 {
   width: 8.33%;
