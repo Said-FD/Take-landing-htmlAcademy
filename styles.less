@@ -67,7 +67,7 @@ label {display: none;}
 	width: 1170px;
 	margin: 0 auto;
 }
-.row:after {
+.row::after {
     content: "";
     clear: both;
     display: block;
@@ -89,7 +89,7 @@ label {display: none;}
 		font-style: italic;
 		background: transparent;
 		z-index: 1;
-		&:before {
+		&::before {
 			content: '';
 			position: absolute;
 			top: 0px;
@@ -99,7 +99,7 @@ label {display: none;}
 			border: 4px solid #fff;
 			border-radius: 50%;
 		}
-		&:after {
+		&::after {
 			content: '';
 			position: absolute;
 			top: 15px;
@@ -126,7 +126,7 @@ label {display: none;}
 			a {color: #fff;}
 		}
 	}
-	article {
+	div:last-child {
 		position: relative;
 		img {
 			position: absolute;
@@ -381,7 +381,7 @@ footer {
 					cursor: pointer;
 				}
 			}
-			span {
+			.tick {
 				position: absolute;
 				bottom: -3em;
 				right: -3.5em;
@@ -391,7 +391,8 @@ footer {
 				transform: rotate(135deg);
 				background: #82ca9c;
 				z-index: 0;
-				div {
+				span {
+					display: block;
 					width: 30px;
 					height: 15px;
 					border-right: 1px solid #fff;

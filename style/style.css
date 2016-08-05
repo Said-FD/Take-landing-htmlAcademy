@@ -96,7 +96,7 @@ label {
   width: 1170px;
   margin: 0 auto;
 }
-.row:after {
+.row::after {
   content: "";
   clear: both;
   display: block;
@@ -119,7 +119,7 @@ label {
   background: transparent;
   z-index: 1;
 }
-.section-1 .logo:before {
+.section-1 .logo::before {
   content: '';
   position: absolute;
   top: 0px;
@@ -129,7 +129,7 @@ label {
   border: 4px solid #fff;
   border-radius: 50%;
 }
-.section-1 .logo:after {
+.section-1 .logo::after {
   content: '';
   position: absolute;
   top: 15px;
@@ -157,10 +157,10 @@ label {
 .section-1 aside h5 a {
   color: #fff;
 }
-.section-1 article {
+.section-1 div:last-child {
   position: relative;
 }
-.section-1 article img {
+.section-1 div:last-child img {
   position: absolute;
   top: -17em;
   right: 1.2em;
@@ -477,7 +477,7 @@ footer .col-6:last-child form input[type=submit]:hover {
   opacity: .1;
   cursor: pointer;
 }
-footer .col-6:last-child form span {
+footer .col-6:last-child form .tick {
   position: absolute;
   bottom: -3em;
   right: -3.5em;
@@ -488,7 +488,8 @@ footer .col-6:last-child form span {
   background: #82ca9c;
   z-index: 0;
 }
-footer .col-6:last-child form span div {
+footer .col-6:last-child form .tick span {
+  display: block;
   width: 30px;
   height: 15px;
   border-right: 1px solid #fff;
