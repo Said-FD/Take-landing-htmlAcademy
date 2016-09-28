@@ -324,15 +324,16 @@
 	</footer>
 	<!-- Gallery Script for window width > 1224px -->
 	<script type="text/javascript">
+		var gallery = document.querySelector('#gallery');
 		if (window.innerWidth > 1224 && window.innerWidth < 2400) {
-			window.onscroll = function() {gallerySliding()};
+  		window.addEventListener('scroll', gallerySliding);
 		}
 		function gallerySliding() {
-		    if (document.body.scrollTop > 1390) {
-		      document.getElementById("gallery").className = "gallery-translate";
-		    } else if (document.body.scrollTop < 1385) {
-		      document.getElementById("gallery").className = "";
-		    }
+  		if (document.body.scrollTop > 1390) {
+    		gallery.classList.add('gallery-translate');
+  		} else if (document.body.scrollTop < 1385) {
+    		gallery.classList.remove('gallery-translate');
+  		}
 		}
 	</script>
 </body>
