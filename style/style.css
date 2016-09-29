@@ -12,7 +12,7 @@ body {
   line-height: 145%;
   background: #fff;
 }
-h1 {
+h2.col-12 {
   font-weight: 300;
   font-size: 3.75em;
 }
