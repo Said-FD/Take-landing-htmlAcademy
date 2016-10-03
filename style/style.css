@@ -359,7 +359,8 @@ label {
 .section-7 .col-6 {
   padding: 2.3em 7em 3.5em 3.35em;
 }
-.section-7 .col-6 button {
+.section-7 .col-6 button,
+.section-7 .col-6 .status {
   text-transform: uppercase;
   color: #fff;
   border: none;
@@ -367,7 +368,9 @@ label {
   transition: all .3s;
 }
 .section-7 .col-6 .status {
+  width: 130px;
   padding: 0.3em 1.2em;
+  text-align: center;
   font-weight: 800;
   font-size: 0.6875em;
   letter-spacing: 0.1em;
@@ -393,7 +396,8 @@ label {
   background: #82ca9c;
   border-radius: 3px;
 }
-.section-7 .col-6 .buy-now:hover {
+.section-7 .col-6 .buy-now:hover,
+.section-7 .col-6 .buy-now:focus {
   -webkit-filter: contrast(115%);
   filter: contrast(115%);
   cursor: pointer;
@@ -473,7 +477,8 @@ footer .col-6:last-child form input[type=submit] {
   opacity: 0;
   transition: all .3s;
 }
-footer .col-6:last-child form input[type=submit]:hover {
+footer .col-6:last-child form input[type=submit]:hover,
+footer .col-6:last-child form input[type=submit]:focus {
   opacity: .1;
   cursor: pointer;
 }
